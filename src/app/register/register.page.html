@@ -1,0 +1,21 @@
+<ion-content padding="center" text-center>
+      <ion-title>
+      Register
+      </ion-title>
+
+    <ion-item>
+    <ion-input placeholder="UserName" [(ngModel)]="username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+    <ion-input placeholder="Password" type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+    <ion-input placeholder="Confirm Password" type="password" [(ngModel)]="repassword"></ion-input>
+    </ion-item>
+
+    <ion-button shape="round" size="small" (click)="register()">register</ion-button>
+     <ion-button expand="block" routerLink="/" routerDirection="root">Submit
+     </ion-button>
+</ion-content>

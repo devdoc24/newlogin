@@ -1,0 +1,23 @@
+<ion-content padding="center" text-center>
+      <ion-title>
+      MyApp
+    </ion-title>
+<ion-list>
+
+  <ion-item>
+    <ion-input placeholder="UserName" [(ngModel)]="username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input placeholder="Password" type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+
+
+</ion-list>
+
+<div padding="center" text-left>
+  <ion-button shape="round" size="small" (click)="login()">Sign In</ion-button>
+  <ion-button shape="round" size="small" routerLink="/register" routerDirection="root">Register</ion-button>
+  <ion-button expand="block" routerLink="/" routerDirection="root">Logout</ion-button>
+</div>
+</ion-content>
