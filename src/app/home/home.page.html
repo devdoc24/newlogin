@@ -1,23 +1,9 @@
-<ion-content padding="center" text-center>
-      <ion-title>
-      MyApp
-    </ion-title>
-<ion-list>
+<ion-content class="title" style="background-color:cadetblue;height:100%; width:100%; object-fit: contain">
+    <ion-slides  style="height:100%; width:100%; object-fit: contain">
+        <ion-slide style="background-color:cadetblue" class="title">
+            <h1>Welcome to Caler</h1>
+            <ion-button class="bottom" shape="round" size="small" routerLink="/popups" routerDirection="root">Get Started</ion-button>
 
-  <ion-item>
-    <ion-input placeholder="UserName" [(ngModel)]="username"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-input placeholder="Password" type="password" [(ngModel)]="password"></ion-input>
-  </ion-item>
-
-
-</ion-list>
-
-<div padding="center" text-left>
-  <ion-button shape="round" size="small" (click)="login()">Sign In</ion-button>
-  <ion-button shape="round" size="small" routerLink="/register" routerDirection="root">Register</ion-button>
-  <ion-button expand="block" routerLink="/" routerDirection="root">Logout</ion-button>
-</div>
+        </ion-slide>
+ </ion-slides>
 </ion-content>

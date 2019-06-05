@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "830051712767",
+    "firebase_url": "https://caler-verification.firebaseio.com",
+    "project_id": "caler-verification",
+    "storage_bucket": "caler-verification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830051712767:android:2ec7cf360121106c",
+        "android_client_info": {
+          "package_name": "com.caler.verification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830051712767-10iunhv7p1pkpstal2lqepnh69q2kt53.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.caler.verification",
+            "certificate_hash": "d73473404da5e0dbe9955f26d2d0682082993a88"
+          }
+        },
+        {
+          "client_id": "830051712767-radfp795qqhaclatol02c1dnr6umms3j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmYX2iIB9SFyyYSxry-VyNriY_AIrS2HE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830051712767-radfp795qqhaclatol02c1dnr6umms3j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

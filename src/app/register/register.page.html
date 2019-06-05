@@ -1,21 +1,15 @@
+<ion-header>
+    <ion-toolbar>
+       <ion-title text-center>Get Started</ion-title>
+    </ion-toolbar>
+</ion-header>
+
 <ion-content padding="center" text-center>
-      <ion-title>
-      Register
-      </ion-title>
+    <ion-text color="dark" class="title">
+        <p>Please enter your mobile number for the verfication.</p>
+    </ion-text>
 
-    <ion-item>
-    <ion-input placeholder="UserName" [(ngModel)]="username"></ion-input>
-    </ion-item>
-
-    <ion-item>
-    <ion-input placeholder="Password" type="password" [(ngModel)]="password"></ion-input>
-    </ion-item>
-
-    <ion-item>
-    <ion-input placeholder="Confirm Password" type="password" [(ngModel)]="repassword"></ion-input>
-    </ion-item>
-
-    <ion-button shape="round" size="small" (click)="register()">register</ion-button>
-     <ion-button expand="block" routerLink="/" routerDirection="root">Submit
-     </ion-button>
-</ion-content>
+    <ion-button shape="round" size="small" (click)="send()">Send OTP</ion-button>
+    <ion-input type="text" placeholder="Enter OTP" [(ngModel)]="code"></ion-input>
+    <ion-button shape="round" size="small" (click)="verify()">Verify</ion-button>
+ </ion-content>

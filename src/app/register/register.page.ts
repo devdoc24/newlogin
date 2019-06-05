@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as firebase from 'firebase';
 
 @Component ({
   selector: 'app-register',
@@ -6,20 +7,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register.page.scss'],
 })
 export class RegisterPage implements OnInit {
-  username: string;
-  password: string;
-  repassword: string;
+    verificationId: any;
+    code: string = "";
+
   constructor() { }
 
   ngOnInit() {
   }
- register() {
-     if (!this.username || !this.password || !this.repassword) {
-       alert('please fill all the fields');
-      } else {
-           console.log("username: "+this.username);
-           console.log("Password: "+this.password);
-           console.log("RePassword: "+this.repassword);
-     }
+    send() {
+        (<any>window).FirebasePlugin.verifyPhoneNumber("+918099044468", 60, (credential) => {
+            alert("SMS Sent Successfully");
+            console.log(credential);
+
+            this.verificationId = credential.verificationId;
+        }, (error) => {
+            console.error(error);
+            });
+    }
+
+    verify() {
+        let signInCredential = firebase.auth.PhoneAuthProvider.credential(this.verificationId, this.code);
+        firebase.auth().signInWithCredential(signInCredential).then((info) => {
+        console.log(info)
+        }, (error) => {
+            console.error(error);
+        })
+    }
   }
-}

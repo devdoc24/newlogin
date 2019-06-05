@@ -1,4 +1,11 @@
-ion-title{
-  margin-top: 30vh;
-  margin-bottom: 5vh;
+ .title {
+    font-size:small;
+    font-family:'Bell MT';
+}
+
+.bottom {
+    position: fixed;
+    left: 30px;
+    bottom: 60px;
+    right:30px;
 }

@@ -1,0 +1,19 @@
+ .title {
+    font-size:small;
+    font-family:'Bell MT';
+}
+
+.bottom-left {
+    position: fixed;
+    left:0;
+    bottom: 60px;
+    right: 30;
+    background-color:aliceblue;
+}
+
+.bottom-right {
+    position: fixed;
+    left: 30;
+    bottom: 60px;
+    right: 0;
+}
