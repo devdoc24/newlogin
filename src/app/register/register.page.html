@@ -9,7 +9,11 @@
         <p>Please enter your mobile number for the verfication.</p>
     </ion-text>
 
+    
+    <ion-input type="text" placeholder="Please enter your mobile number for the verification (Ex: +91xxxxxxxxxx)" [(ngModel)]="phoneNumber" ></ion-input>
     <ion-button shape="round" size="small" (click)="send()">Send OTP</ion-button>
-    <ion-input type="text" placeholder="Enter OTP" [(ngModel)]="code"></ion-input>
+    <ion-input type="text" placeholder="Enter OTP Sent to your Mobile" [(ngModel)]="code"></ion-input>
     <ion-button shape="round" size="small" (click)="verify()">Verify</ion-button>
+ 
+
  </ion-content>

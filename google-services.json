@@ -15,11 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "830051712767-10iunhv7p1pkpstal2lqepnh69q2kt53.apps.googleusercontent.com",
+          "client_id": "830051712767-h6iqr035e2u7nsa92leol2tetakikl4j.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.caler.verification",
-            "certificate_hash": "d73473404da5e0dbe9955f26d2d0682082993a88"
+            "certificate_hash": "b0ce1e0acd38e5c76d313abcf6422109fff8347d"
           }
         },
         {
