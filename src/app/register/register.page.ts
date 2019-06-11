@@ -36,7 +36,7 @@ export class RegisterPage implements OnInit{
         
         firebase.auth().signInWithCredential(signInCredential).then((info) => {
           console.log(info);
-          this.router.navigate(['/popups']);
+          this.router.navigate(['/user-registration']);
         }, error => {
             console.log("error: " + error);
             });
